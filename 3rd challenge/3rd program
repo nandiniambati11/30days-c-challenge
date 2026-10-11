@@ -1,21 +1,21 @@
 // SMART CART
-#include <stdio.h>
+#include<stdio.h>
 int main(){
 float amount,delivery_distance,discount_rate,discount_amount,net_amount,delivery_charge,total_bill;
 int customer_type;
-printf("Enter total shopping amount: \n");
+printf("Enter total shopping amount:\n");
 scanf("%f",&amount);
-printf("Enter customer type (1-Student, 2-Regular): \n");
+printf("Enter customer type (1-Student, 2-Regular):\n");
 scanf("%d",&customer_type);
-printf("Enter delivery distance in km: \n");
+printf("Enter delivery distance in km:\n");
 scanf("%f",&delivery_distance);
-if(customer_type==1 && amount>=2000){
+if(customer_type==1&&amount>=2000){
 discount_rate=15;
 }
-else if(customer_type==1 && amount<2000){
+else if(customer_type==1&&amount<2000){
 discount_rate=10;
 }
-else if(customer_type==2 && amount>=3000){
+else if(customer_type==2&&amount>=3000){
 discount_rate=8;
 }
 else{
@@ -26,7 +26,7 @@ net_amount=amount-discount_amount;
 if(delivery_distance<=5){
 delivery_charge=40;
 }
-else if(delivery_distance>5 && delivery_distance<=15){
+else if(delivery_distance>5&&delivery_distance<=15){
 delivery_charge=70;
 }
 else{
